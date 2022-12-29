@@ -93,10 +93,10 @@ const SignIn = ({ navigate }) => {
               </View>
               <Button
                 title="Login"
-                BackColor={!isValid ? "#FFD700" : "#D3D3D3"}
-                textColor={!isValid ? "black" : "white"}
+                BackColor={isValid ? "#FFD700" : "#D3D3D3"}
+                textColor={isValid ? "black" : "white"}
                 press={handleSubmit}
-                disable={isValid}
+                disable={!isValid}
               />
             </View>
           )}

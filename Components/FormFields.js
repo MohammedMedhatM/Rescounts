@@ -15,7 +15,7 @@ const FormFields = () => {
 
   useEffect(() => {
     if (Object.keys(user).length !== 0) {
-      alert(user.data.user.email + " has logged in successfully");
+      alert(user.data.user.email + " has signed up successfully");
     }
   }, [user]);
 

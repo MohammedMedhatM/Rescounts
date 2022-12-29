@@ -6,7 +6,7 @@ import { Formik } from "formik";
 import Button from "./Button";
 import { loginValidationSchema } from "./validate";
 import { Icon } from "@rneui/themed";
-import { signin, signup } from "../actions/user";
+import { signup } from "../actions/user";
 
 const FamilyFields = () => {
   const dispatch = useDispatch();
@@ -22,7 +22,6 @@ const FamilyFields = () => {
   };
 
   const handleSubmit = (values) => {
-    console.log(values);
     dispatch(signup(values));
   };
   return (
